@@ -31,8 +31,6 @@ recovered from `musif`-derived musical features. It covers:
 
 ## Repository structure
 
-*(Adjust to match your actual layout — TODO)*
-
 ```
 .
 ├── Experiments_notebook_rec_af_signals.ipynb   # Main notebook — reproduces all paper results
