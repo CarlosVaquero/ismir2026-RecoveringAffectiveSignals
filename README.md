@@ -4,10 +4,11 @@ Code and data accompanying our paper at **ISMIR 2026**.
 
 > **Recovering Affective Signals in Baroque Opera: A Comparative Evaluation of Human and LLM Annotation**
 > Carlos Vaquero Patricio, Álvaro Torrente
+
 > Proceedings of the 27th International Society for Music Information Retrieval Conference (ISMIR), Abu Dhabi, UAE, 2026.
 
 📄 Paper: https://ismir2026program.ismir.net/poster_206.html
-💻 Repository: https://github.com/CarlosVaquero/ismir2026-RecoveringAffectiveSignals
+
 
 ---
 
@@ -33,22 +34,18 @@ recovered from `musif`-derived musical features. It covers:
 
 ```
 .
-├── Experiments_notebook_rec_af_signals.ipynb   # Main notebook — reproduces all paper results
-├── constants.py                    # Thresholds, IDs, column exclusion lists, feature subsets
-├── group_musif_features.py         # Regex map: musif feature name -> musical module
-├── feature_reduction.py            # PCA reduction pipeline wrapper
-├── utils_classification.py         # Grouped evaluation, skill scores, baselines, bootstrap CIs
-├── semantic_validity_metrics.py    # Centroid distances + pairwise ARI
-├── module_importance_heatmaps.py   # PCA feature-family importance heatmaps
-├── utils_llm_tagging.py            # LLM tagging/annotation functions
-├── llm_config.py                   # LLM configuration (models, prompts, API settings)
+├── data/Arias_texts_and_annotations.csv                    # Aria texts and LLM annotations
+├── Notebooks/Experiments_notebook_rec_af_signals.ipynb     # Main notebook — reproduces all paper results
 ├── utils/
 │   ├── modeling_functions.py       # PCAConfig, PCAReductionPipeline, ...
-│   ├── preprocessing_functions.py
-│   ├── evaluation.py
+│   ├── group_musif_features.py         # Regex map: musif feature name -> musical module
+│   ├── llm_config.py                   # LLM configuration (models, prompts, API settings)
+|   ├── utils_llm_tagging.py            # LLM tagging/annotation functions
+|   ├── utils_classification.py         # Grouped evaluation, skill scores, baselines, bootstrap CIs
+|   ├── semantic_validity_metrics.py    # Centroid distances + pairwise ARI
+|   ├── module_importance_heatmaps.py   # PCA feature-family importance heatmaps
 │   └── utils_outliers.py
-├── Arias_texts_and_annotations/    # Aria texts and LLM annotations
-└── supplementary_material.pdf      # Extended experiments and results (TODO: confirm filename)
+└── Supplementary_material_A_Comparative_Evaluation_of_Human_and_LLM_Annotation.pdf      # Extended results
 ```
 
 ## Installation
@@ -128,7 +125,7 @@ The dataset is downloaded automatically from a shared drive within the experimen
 notebook — no manual download step is required; run the notebook's data-loading cell
 and it will fetch the files.
 
-The aria texts and the LLM annotations are provided in **`Arias_texts_and_annotations`**.
+The aria texts and the LLM annotations are provided in **`data/Arias_texts_and_annotations.csv`**.
 
 
 ## Citation
