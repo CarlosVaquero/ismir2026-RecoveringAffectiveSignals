@@ -1,0 +1,15 @@
+*.DS_Store
+*.rdb
+*.rdx
+*.numbers
+*.venv
+*.pyc
+*.pyo
+.env
+config.json
+utils/unused_utils/
+utils/__pycache__/
+# Data files
+#*.csv
+#*.html
+#*.pdf
